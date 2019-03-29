@@ -1,5 +1,4 @@
-<div class="container">
-  <h3>Customer Basic Info</h3>
+<h3>Customer Basic Info</h3>
   <form  (ngSubmit)="createCustomerForm(myform)" class="form form-login" method="POST">
     <div class="form-group">
       <label for="name">Name</label>
@@ -53,37 +52,3 @@
     <button type="submit" class="btn btn-success">Submit</button>
 
   </form>
-</div>
-
-<br>  
-<div>
-  <div class="row">
-      <div class="col col-xl-12 col-lg-12">
-          <div class="card mb-12">
-              <div class="card-header">
-                  Customer Info
-              </div>
-              <div class="card-body table-responsive">
-                  <table class="table">
-                      <thead>
-                      <tr>
-                          <th>#</th>
-                          <th>Name</th>
-                          <th>Email</th>
-                          <th>Phone</th>
-                      </tr>
-                      </thead>
-                      <tbody>
-                      <tr *ngIf="customerInfo" >
-                          <th scope="row">{{customerInfo.CustomerInfo.AccountNumber}}</th>
-                          <td>{{customerInfo.CustomerInfo.Name}}</td>
-                          <td>{{customerInfo.CustomerInfo.Email}}</td>
-                          <td>{{customerInfo.CustomerInfo.Phone}}</td>
-                      </tr>      
-                      </tbody>
-                  </table>
-              </div>
-          </div>
-      </div> 
-  </div>
-</div>

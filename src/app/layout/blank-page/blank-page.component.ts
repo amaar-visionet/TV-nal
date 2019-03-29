@@ -18,9 +18,15 @@ export class BlankPageComponent implements OnInit {
     constructor(private customerService: CustomerService) {}
 
     ngOnInit() {
+
+        
         this.customerService.getCustomer(this.getCustomerObj).subscribe((res)=>{
             this.customerInfo = res;
             console.log(this.customerInfo.CustomerInfo);
         });
+    }
+
+    createCustomerForm(form){
+        console.log(form.value);
     }
 }

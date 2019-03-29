@@ -14,4 +14,9 @@ export class CustomerService {
   public getCustomer(customer: Customer){
     return this.httpClient.post(AppSettings.getCustomerInfo,customer);
   }
+
+  //Get Customer Info
+  public addCustomer(customer: Customer){
+    return this.httpClient.post(AppSettings.createCustomer,customer);
+  }
 }

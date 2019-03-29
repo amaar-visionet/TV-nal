@@ -1,0 +1,77 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="addCustomerForm">
+  <div class="container">
+      <div class="row">
+            <div class="col-md-6">
+                <h6>Customer Info</h6>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" formControlName="customerName" value="" placeholder="Name" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" formControlName="customerEmail" value="" placeholder="Email" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input type="number" class="form-control" formControlName="customerPhone" value="" placeholder="Phone"  required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <!-- <label for="sel1">Select list:</label> -->
+                    <select class="form-control" formControlName="customerType">
+                      <option value="">Select Customer Type</option>
+                      <option value="Organization">Organization</option>
+                    </select>
+                </div>
+                <div formGroupName="address">
+                    <h6>Address Info</h6>
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" formControlName="addressName" value="" placeholder="Name" required>
+                    </div>
+    
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" formControlName="addressStreet" value="" placeholder="Street" required>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" formControlName="addressCity" value="" placeholder="City" required>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" formControlName="addressState" value="" placeholder="State" required>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <input type="text" class="form-control" formControlName="addressPhone" value="" placeholder="Phone" required>
+                    </div>
+                </div>
+                
+                <div class="form-group col-md-6 text-right">
+                    <button type="submit" class="btn btn-success right">Add Customer</button>
+                </div>
+                
+            </div>
+            <div class="col-md-6">
+                <h6>Contact Person</h6>
+                <div class="form-group col-md-6">
+                  <input type="text" class="form-control" formControlName="cLanguage" value="" placeholder="Language" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" formControlName="cSalutation" value="" placeholder="Salutation" required>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <input type="number" class="form-control" formControlName="cFirstName" value="" placeholder="First Name"  required>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <!-- <label for="sel1">Select list:</label> -->
+                    <select class="form-control" formControlName="customerType">
+                      <option value="">Select Customer Type</option>
+                      <option value="Organization">Organization</option>
+                    </select>
+                </div>
+            </div>
+      </div>
+  </div>
+</form>

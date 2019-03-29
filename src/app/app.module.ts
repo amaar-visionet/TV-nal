@@ -9,6 +9,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AuthGuard } from './shared';
 import { fwcAPIInterceptor  } from './interceptors/httpconfig.interceptor';
+import { SidebarComponent } from './components/shared/sidebar/sidebar.component';
+import { HeaderComponent } from './components/shared/header/header.component';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -18,9 +21,10 @@ import { fwcAPIInterceptor  } from './interceptors/httpconfig.interceptor';
         BrowserAnimationsModule,
         HttpClientModule,
         LanguageTranslationModule,
-        AppRoutingModule
+        AppRoutingModule,
+        NgbDropdownModule
     ],
-    declarations: [AppComponent],
+    declarations: [AppComponent, SidebarComponent, HeaderComponent],
     providers: [
         AuthGuard,
             {
