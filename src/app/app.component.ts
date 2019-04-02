@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
     collapedSideBar: boolean;
     
     constructor() {
+        this.collapedSideBar = true;
     }
 
     ngOnInit() {
@@ -17,5 +18,6 @@ export class AppComponent implements OnInit {
 
     receiveCollapsed($event) {
         this.collapedSideBar = $event;
+        console.log(this.collapedSideBar);
     }
 }

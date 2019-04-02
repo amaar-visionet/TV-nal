@@ -1,4 +1,4 @@
-$topnav-background-color: #2cacff;
+$topnav-background-color: #f7f7f7;
 .sidebar {
     border-radius: 0;
     position: fixed;
@@ -27,7 +27,7 @@ $topnav-background-color: #2cacff;
             background: $topnav-background-color;
             border: 0;
             border-radius: 0;
-            color: white;;
+            color: #464646;;
             text-decoration: none;
             .fa {
                 margin-right: 10px;
@@ -35,11 +35,11 @@ $topnav-background-color: #2cacff;
         }
         a:hover {
             background: darken($topnav-background-color, 5%);
-            color: #fff;
+            color: #464646;
         }
         a.router-link-active {
             background: darken($topnav-background-color, 5%);
-            color: #fff;
+            color: #464646;
         }
         .header-fields {
             padding-top: 10px;
@@ -166,16 +166,16 @@ $topnav-background-color: #2cacff;
     cursor: pointer;
     padding: 12px;
     bottom: 0;
-    color: white;
-    background: #2cacff;
+    color: #000;
+    background: #f7f7f7;
     i {
         font-size: 23px;
     }
     &:hover {
         background: darken($topnav-background-color, 5%);
-        color: #fff;
+        color: #000;
     }
-    border-top: 1px solid #2cacff;;
+    border-top: 1px solid #f7f7f7;;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;

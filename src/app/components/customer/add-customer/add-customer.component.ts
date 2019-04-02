@@ -13,19 +13,27 @@ export class AddCustomerComponent implements OnInit {
     customerInfo: any = "";
     
     addCustomerJSON: any = "";
-    addCustomerForm = new FormGroup({
-        customerName: new FormControl(''),
-        customerEmail: new FormControl(''),
-        customerPhone: new FormControl(''),
-        customerType: new FormControl(''),
-        address: new FormGroup({
-            addressName: new FormControl(''),
-            addressStreet: new FormControl(''),
-            addressCity: new FormControl(''),
-            addressState: new FormControl(''),
-            addressPhone: new FormControl('')
-        })
-      });
+    // addCustomerForm = new FormGroup({
+    //     customerName: new FormControl(''),
+    //     customerEmail: new FormControl(''),
+    //     customerPhone: new FormControl(''),
+    //     customerType: new FormControl(''),
+    //     address: new FormGroup({
+    //         addressName: new FormControl(''),
+    //         addressStreet: new FormControl(''),
+    //         addressCity: new FormControl(''),
+    //         addressState: new FormControl(''),
+    //         addressPhone: new FormControl('')
+    //     }),
+    //     contactPersonInfo: new FormGroup({
+    //         cLanguage: new FormControl(''),
+    //         conFirstName: new FormControl(''),
+    //         conLastName: new FormControl(''),
+    //         conEmail: new FormControl(''),
+    //         conPhone: new FormControl(''),
+    //         conStatus: new FormControl('')
+    //     })
+    //   });
       
     getCustomerObj: any = 
           {
@@ -47,13 +55,13 @@ export class AddCustomerComponent implements OnInit {
     }
 
     createCustomerForm(){
-        console.warn(this.addCustomerForm.value);
+        // console.warn(this.addCustomerForm.value);
     }
 
     onSubmit(): void {
-        console.log(this.addCustomerForm.value);
-        console.log(this.addCustomerForm.value.customerPhone);  
-        this.addCustomerJSON = {
+        // console.log(this.addCustomerForm.value);
+        // console.log(this.addCustomerForm.value.customerPhone);  
+        /* this.addCustomerJSON = {
                 "useMapping":false,
                 "customer":{
                  "Phone": this.addCustomerForm.value.customerPhone,
@@ -112,6 +120,6 @@ export class AddCustomerComponent implements OnInit {
         this.customerService.addCustomer(this.addCustomerJSON).subscribe((res)=>{
             // this.customerInfo = res;
             console.log(res);
-        });
+        }); */
     }
 }
